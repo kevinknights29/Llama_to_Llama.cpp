@@ -25,7 +25,8 @@
                 "redhat.vscode-yaml",
                 "usernamehw.errorlens",
                 "VisualStudioExptTeam.intellicode-api-usage-examples",
-                "VisualStudioExptTeam.vscodeintellicode"
+                "VisualStudioExptTeam.vscodeintellicode",
+                "ms-toolsai.jupyter"
             ]
         }
     },
