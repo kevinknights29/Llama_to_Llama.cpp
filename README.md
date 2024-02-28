@@ -69,7 +69,7 @@ Open the terminal and run the following commands:
 3. Install dependencies
 
     ```bash
-    python -m pip install -r requirements.txt
+    python -m pip install -r .devcontainer/requirements.txt
     ```
 
 After the dependencies install successfully, you are ready to use and add features to the code.
