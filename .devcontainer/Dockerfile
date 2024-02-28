@@ -19,6 +19,9 @@ RUN apt-get update \
 # Copy environment file
 COPY --chown=$MAMBA_USER:$MAMBA_USER env.yaml /tmp/env.yaml
 
+# Copy requirements.txt
+COPY --chown=$MAMBA_USER:$MAMBA_USER requirements.txt /tmp/requirements.txt
+
 # Install Dependencies
 RUN micromamba install -y -n base -f /tmp/env.yaml && \
     micromamba clean --all --yes
