@@ -14,7 +14,9 @@ RUN apt-get update \
     # deps for python packages
     build-essential \
     python3-dev \
-    gcc
+    gcc \
+    # deps for llama.cpp
+    cmake
 
 # Copy environment file
 COPY --chown=$MAMBA_USER:$MAMBA_USER env.yaml /tmp/env.yaml

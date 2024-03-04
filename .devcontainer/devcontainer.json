@@ -7,7 +7,7 @@
     "customizations": {
         "vscode": {
             "settings": {
-                "python.defaultInterpreterPath": "/usr/local/bin/python3"
+                "python.defaultInterpreterPath": "/opt/conda/bin/python"
             },
             "extensions": [
                 "charliermarsh.ruff",
