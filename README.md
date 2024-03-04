@@ -73,3 +73,39 @@ Open the terminal and run the following commands:
     ```
 
 After the dependencies install successfully, you are ready to use and add features to the code.
+
+### Download model from Hugging Face
+
+#### Requirements
+
+- [ ] Hugging Face account.
+    
+    Can be created [here](https://huggingface.co/join).
+
+- [ ] Hugging Face API Token.
+
+    Can be requested [here](https://huggingface.co/settings/tokens).
+
+- [ ] Request access to Meta's Llama v2 models
+
+    Can be requested [here](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf).
+
+> :memo: **NOTE**: A Hugging Face Token is need to access gated models like `Llama v2` and to authenticate with the Hugging Face CLI.
+
+To download a model from Hugging Face, run the notebook [Model Downloader](./model_downloader.ipynb).
+
+The output of this notebook should the desired Hugging Face model inside the `models` directory.
+
+![image](https://github.com/kevinknights29/Llama_to_Llama.cpp/assets/74464814/d46f9124-9b95-4d6a-88ff-982234852865)
+
+### Generating a GGUF file from Hugging Face Llama model weights
+
+To convert the download Llama model from step above, run the notebook [GGUF Converter](./GGUF_converter.ipynb).
+
+This cell is responsible of converting the model to a GGUF compatible format.
+
+![image](https://github.com/kevinknights29/Llama_to_Llama.cpp/assets/74464814/d3a84ea8-8672-4c79-81e8-cef7296168ee)
+
+The remaining part of the notebook will quantize the model (to reduce memory foot print - but may cause response quality degradation) and upload to Hugging Face.
+
+![image](https://github.com/kevinknights29/Llama_to_Llama.cpp/assets/74464814/328fe6d5-a22b-427e-85b6-eb1f0418ecf1)
