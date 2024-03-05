@@ -2,6 +2,17 @@
 
 This project aims to create a guide for generating Llama.cpp GGUF model files out of base Llama v2 model weigths
 
+#### Table of Contents
+
+- [Getting Started](#getting-started)
+    - [Using a Dev Container in VS Code](#using-a-dev-container-in-vs-code)
+    - [Create a Virtual Environment](#create-a-virtual-environment)
+- [Process](#process)
+    - [Download model from Hugging Face](#download-model-from-hugging-face)
+    - [Generating a GGUF file from Llama](#generating-a-gguf-file-from-hugging-face-llama-model-weights)
+        - [Model Quantization](#model-quantization)
+        - [Upload to Hugging Face](#upload-to-hugging-face)
+
 ## Getting Started
 
 To run this project locally, you have two options:
@@ -74,6 +85,8 @@ Open the terminal and run the following commands:
 
 After the dependencies install successfully, you are ready to use and add features to the code.
 
+## Process
+
 ### Download model from Hugging Face
 
 #### Requirements
@@ -107,6 +120,8 @@ This cell is responsible of converting the model to a GGUF compatible format.
 ![image](https://github.com/kevinknights29/Llama_to_Llama.cpp/assets/74464814/d3a84ea8-8672-4c79-81e8-cef7296168ee)
 
 The remaining part of the notebook will quantize the model (to reduce memory foot print - but may cause response quality degradation) and upload to Hugging Face.
+
+#### Model Quantization
 
 ![image](https://github.com/kevinknights29/Llama_to_Llama.cpp/assets/74464814/328fe6d5-a22b-427e-85b6-eb1f0418ecf1)
 
