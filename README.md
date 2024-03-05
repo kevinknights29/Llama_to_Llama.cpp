@@ -109,3 +109,11 @@ This cell is responsible of converting the model to a GGUF compatible format.
 The remaining part of the notebook will quantize the model (to reduce memory foot print - but may cause response quality degradation) and upload to Hugging Face.
 
 ![image](https://github.com/kevinknights29/Llama_to_Llama.cpp/assets/74464814/328fe6d5-a22b-427e-85b6-eb1f0418ecf1)
+
+#### Upload to Hugging Face
+
+![image](https://github.com/kevinknights29/Llama_to_Llama.cpp/assets/74464814/e03d78b9-b113-4ab9-a39d-12c9f74ca2e2)
+
+![image](https://github.com/kevinknights29/Llama_to_Llama.cpp/assets/74464814/4d99465c-b47d-48fa-afd1-72dd8016210c)
+
+Repo: [kevinknights29/llama-2-7b-chat-q4_0.gguf](https://huggingface.co/kevinknights29/llama-2-7b-chat-q4_0.gguf/tree/main)
