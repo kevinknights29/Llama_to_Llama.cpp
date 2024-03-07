@@ -11,6 +11,7 @@ RUN apt-get update \
     curl \
     # deps for development
     git \
+    openssh-client \
     # deps for python packages
     build-essential \
     python3-dev \
